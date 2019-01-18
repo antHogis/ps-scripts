@@ -1,0 +1,1 @@
+Get-ChildItem *.class -Recurse | foreach { Remove-Item -Path $_.FullName }
