@@ -26,7 +26,7 @@ for ($i=0; $i -lt $fileNames.length; $i++) {
         
         if (Test-Path($fileDestination)) {
             $message = "File $($fileDestination) already exists. Overwrite? [y/n] (Default: yes): "
-            Write-Host $messsage -NoNewline -ForegroundColor Yellow -BackgroundColor Black
+            Write-Host $message -NoNewline -ForegroundColor Yellow -BackgroundColor Black
             $response = Read-Host
             $writeFile = ($response -ne "n") -and ($response -ne "N")
         }
