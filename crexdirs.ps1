@@ -1,8 +1,12 @@
-$exer_nmbr = Read-Host -Prompt 'Input exercise number'
-$exer_nmbr = [int] $exer_nmbr
+param (
+    [Int]$exer_nmbr = ([Int] (Read-Host -Prompt 'Input exercise number')),
+    [Int]$exer_amnt = ([Int] (Read-Host -Prompt 'Input the amount of exercise assignments'))
+)
+# $exer_nmbr = Read-Host -Prompt 'Input exercise number'
+# $exer_nmbr = [int] $exer_nmbr
 
-$exer_amnt = Read-Host -Prompt 'Input the amount of exercise assignments'
-$exer_amnt = [int] $exer_amnt
+# $exer_amnt = Read-Host -Prompt 'Input the amount of exercise assignments'
+# $exer_amnt = [int] $exer_amnt
 
 $exer_path
 if ($exer_nmbr -lt 10) {
